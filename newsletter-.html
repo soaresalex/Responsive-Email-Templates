@@ -1,0 +1,554 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Newsletter 1</title>
+<link rel="stylesheet" href="https://use.typekit.net/ptm5acx.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<style type="text/css">
+a {
+	color: #007dc1;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+/* ---------- [[ BORDERS ]] ----------*/
+.border-top-gray {
+	border-top: 1px solid #bebec0;
+	padding: 20px 0 10px 0;
+}
+.border-teal {
+	border: 1px solid #006d6f;
+}
+.border-gray {
+	border: 1px solid #bcbec0;
+}
+/*** BACKGROUND COLORS 
+		.bgcolor-blue = used for two- or three- column modules for each card
+		.bgcolor-blue-dark = used for two- or three- column modules for each card
+		.bgcolor-teal = used for two- or three- column modules for each card
+		.bgcolor-gray-light = can be used anywhere on the email, but primarily used for the one-column module with CTA
+***/
+.bgcolor-blue {
+	background-color: #007dc1;
+}
+.bgcolor-blue-dark {
+	background-color: #00588a;
+}
+.bgcolor-teal {
+	background-color: #006d6f;
+}
+.bgcolor-gray-light {
+	background-color: #ebebec;
+}
+/*** BUTTONS
+		.btn = standard btn styling with the background, border, and font color
+		.btn-blue = blue button with white font
+		.btn-teal = teal button with white font
+		.btn-ghost-blue = blue border and font with transparent background
+		.btn-ghost-teal = teal border and font with transparent background
+		.btn-ghost-white = white border and font with transparent background
+		.btn-sm = used for mult-column modules
+		.btn-lg = used for single column modules
+***/
+.btn {
+	font-family: 'Roboto', Arial, sans-serif;
+	padding: 7px 0;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.btn-blue {
+	color: #ffffff;
+	background-color: #00588a;
+	border: 1px solid #00588a;
+}
+.btn-teal {
+	color: #ffffff;
+	background-color: #006d6f;
+	border: 1px solid #006d6f;
+}
+.btn-ghost-blue {
+	color: #00588a;
+	background-color: transparent;
+	border: 1px solid #00588a;
+}
+.btn-ghost-teal {
+	color: #006d6f;
+	background-color: transparent;
+	border: 1px solid #006d6f;
+}
+.btn-ghost-white {
+	color: #ffffff;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+}
+.btn-sm {
+	width: 100px;
+}
+.btn-lg {
+	width: 150px;
+}
+/* ---------- [[ CHART ]] ----------*/
+.chart {
+	padding: 20px;
+	border-right: 1px solid #ebebec;
+	border-left: 1px solid #ebebec;
+}
+.chart-disclosure {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #4e4e4f;
+	line-height: 1.5;
+	padding: 0 20px 20px 20px;
+	border-right: 1px solid #ebebec;
+	border-left: 1px solid #ebebec;
+	border-bottom: 1px solid #ebebec;
+}
+.chart-title {
+	font-family: 'bebas-neue', Arial Narrow, sans-serif;
+	font-size: 24px;
+	background-color: #007dc1;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 15px;
+	text-transform: uppercase;
+}
+/* ---------- [[ CONTACT SECTION ]] ----------*/
+.cta-txt {
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+	font-family: sans-serif;
+	color: #007dc1;
+	padding-top: 10px;
+	text-decoration: underline;
+}
+.contact-us {
+	font-family: 'Roboto', Arial, sans-serif;
+	text-align: center;
+	color: #4e4e4f;
+	padding: 10px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+}
+/*** CONTENT
+		.rwd-content = Content in body/one-column modules
+		.rwd-col-2 = Content in two-column modules
+		.rwd-col-3 = Content in three-column modules
+***/
+.rwd-content, .rwd-col-2, .rwd-col-3 {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.5;
+}
+.rwd-content {
+	font-size: 13px;
+	padding: 20px;
+}
+.rwd-col-2 {
+	font-size: 13px;
+	padding: 20px 0;
+}
+.rwd-col-3 {
+	font-size: 11px;
+	padding: 25px 0;
+}
+/* ---------- [[ DATA TABLE ]] ----------*/
+.data-table-col-header td {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #4e4e4f;
+	text-align: center;
+	padding: 15px 0;
+	background-color: #adcdec;
+}
+.data-table-column td {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #4e4e4f;
+	text-align: center;
+	padding: 15px 10px;
+	border: 1px solid #bcbec0;
+}
+.data-table-column td:first-child {
+	font-weight: bold;
+	text-align: left;
+}
+.data-table-title {
+	font-family: 'bebas-neue', Arial Narrow, sans-serif;
+	font-size: 24px;
+	color: #ffffff;
+	background-color: #007dc1;
+	padding: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.data-table-subtitle {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 12px;
+	text-transform: capitalize;
+	font-weight: normal;
+}
+/* ---------- [[ DISCLOSURE: This is located at the bottom of the email ]] ----------*/
+.disclosure {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #4e4e4f;
+	line-height: 1.5;
+	padding: 30px 0;
+	text-align: left;
+	border-top: 1px solid #bcbec0;
+}
+/*** FONT COLORS 
+		.font-gray = used for the body and headers
+		.font-white = used for the body and headers
+		.font-teal-light = used for .rwd-header-4 if the background is teal
+		.font-blue-light = used for .rwd-header-4 if the background is blue
+***/
+.font-gray {
+	color: #4e4e4f;
+}
+.font-white {
+	color: #ffffff;
+}
+.font-teal-light {
+	color: #9bd1d4;
+}
+.font-blue-light {
+	color: #adcdec;
+}
+/*** HEADERS
+		.rwd-header-1 = email header
+		.rwd-header-2 = header for each module
+		.rwd-header-3 = header for each modules with multiple columns
+		.rwd-header-4 = subheader for .rwd-header-3
+***/
+.rwd-header-1, .rwd-header-2, .rwd-header-3 {
+	font-family: 'bebas-neue', Arial Narrow, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 1;
+}
+.rwd-header-1 {
+	font-size: 40px;
+	padding: 0 20px 20px 20px;
+}
+.rwd-header-2 {
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+.rwd-header-3 {
+	font-size: 24px;
+}
+.rwd-header-4 {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1;
+	text-align: left;
+	padding-bottom: 5px;
+}
+/* ---------- [[ HERO IMAGE ]] ----------*/
+.hero img {
+	width: 100%;
+	height: auto;
+}
+/* ---------- [[ LOGO: This is located at the top of the email ]] ----------*/
+.logo {
+	padding: 20px 20px 40px 20px;
+}
+/* ---------- [[ PREHEADER: This is located above the company logo ]] ----------*/
+.preheader {
+	padding: 10px 20px;
+	color: #4e4e4f;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 10px;
+	text-align: left;
+	font-style: normal;
+	font-weight: normal;
+}
+.preheader hr {
+	border: 0.5px solid #bcbec0;
+}
+/* ---------- [[ SOCIAL MEDIA ICONS ]] ----------*/
+.social-icons {
+	text-align: left; /* This is flexible to left or center align the social icons */
+}
+.social-icons img {
+	width: 25px;
+	height: 25px;
+	padding-left: 5px;
+}
+/* ---------- [[ PADDINGS ]] ----------*/
+.rwd-padding-all { /* Instances where padding cannot be added within <td> tag */
+	padding: 20px;
+}
+.rwd-padding-30 {
+	padding: 30px;
+}
+.rwd-padding-sides { /* Instances where padding cannot be added within <td> tag */
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.rwd-padding-top-bottom {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/* ---------- [[ SPEAKERS ]] ----------*/
+.speaker {
+	padding: 30px 0 0 0;
+	text-align: center;
+	width: 25%;
+}
+.speaker-img {
+	width: 100px;
+	border-radius: 50%;
+	border: 1px solid #bcbec0;
+	background-color: #ebebec;
+}
+.speaker-name {
+	font-family: 'bebas-neue', Arial Narrow, sans-serif;
+	font-size: 20px;
+	padding-top: 10px;
+}
+.speaker-company {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 12px;
+}
+/* ---------- [[ TEXT ALIGNMENTS ]] ----------*/
+.c-alignment {
+	text-align: center;
+}
+.l-alignment {
+	text-align: left !important;
+}
+
+@media screen and (max-width:600px) {
+table {
+	width: 100% !important;
+}
+.rwd {
+	display: block !important;
+	mheight: auto !important;
+	max-width: 100% !important;
+	width: 100% !important;
+	padding-bottom: 10px !important;
+}
+.rwd-img {
+	width: 100% !important;
+	height: auto !important;
+}
+.rwd-padding-30 {
+	padding: 0;
+}
+.col-3-body {
+	padding: 10px 0 !important;
+}
+/* When viewed on mobile the data table will make the column values stack on top of each other */
+.data-table-col-header {
+	display: none !important;
+}
+.data-table-column td {
+	display: block;
+	border: none !important;
+	position: relative;
+	padding-left: 50%;
+}
+.data-table-column td:before {
+	position: absolute;
+	top: 13px;
+	left: 6px;
+	width: 45%;
+	padding-right: 10px;
+	white-space: nowrap;
+}
+.data-table-column td:nth-child(even) {
+	background: #ebebec;
+}
+.data-table-column td:first-child {
+	background: #adcdec;
+	text-align: left;
+	padding-left: 20px;
+}
+.data-table-column td:nth-of-type(1):before {
+	content: "";
+}
+.data-table-column td:nth-of-type(2):before {
+	content: "Current";
+}
+.data-table-column td:nth-of-type(3):before {
+	content: "Change*";
+}
+.data-table-column td:nth-of-type(4):before {
+	content: "Change(%)";
+}
+.data-table-column td:nth-of-type(5):before {
+	content: "52 Wk High";
+}
+.data-table-column td:nth-of-type(6):before {
+	content: "52 Wk Low";
+}
+}
+</style>
+</head>
+
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!-- PREHEADER -->
+  <tr>
+    <td><table align="center" border="0" cellpadding="0" cellspacing="0" width="640">
+        <tr>
+          <td class="preheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            <hr></td>
+        </tr>
+      </table></td>
+  </tr>
+  
+  <!-- COMPANY LOGO -->
+  <tr>
+    <td><table align="center" border="0" cellpadding="0" cellspacing="0" width="640">
+        <tr>
+          <td class="logo"><img alt="Legg Mason | Global Asset Management" name="Cont_0" priv3_iframe_element="1" src="https://www.leggmason.com/etc/clientlibs/leggmason/img/logo-legg-mason.png" width="150" /></td>
+        </tr>
+      </table></td>
+  </tr>
+  
+  <!-- PAGE SUBHEADER -->
+  <tr>
+    <td><table align="center" border="0" cellpadding="0" cellspacing="0" width="640">
+        <tr>
+          <td class="rwd-header-4 font-gray rwd-padding-sides">Lorem ipsum dolor sit amet</td>
+        </tr>
+      </table></td>
+  </tr>
+  
+  <!-- PAGE HEADER -->
+  <tr>
+    <td><table align="center" border="0" cellpadding="0" cellspacing="0" width="640">
+        <tr>
+          <td class="rwd-header-1 font-gray">DECORE NEMORE NAM ID, SAPERET DEMOCRITUM CUM ID. PRO MAGNA</td>
+        </tr>
+      </table></td>
+  </tr>
+  
+  <!-- BODY CONTENT WITH A HERO IMAGE -->
+  <tr>
+    <td><table align="center" border="0" cellpadding="0" cellspacing="0" width="640">
+        <tr>
+          <td class="rwd-content">Quo volutpat delicatissimi ut, usu ad tritani nominavi evertitur. Ut ius legere definitionem, incorrupte consectetuer ut quo, ius putant eruditi habemus in. <strong>Ne usu erat probatus conceptam</strong>, an vim feugiat propriae imperdiet.</td>
+        </tr>
+      </table></td>
+  </tr>
+  
+  <!-- TWO-COLUMN MODULE WITH TITLE SECTION -->
+  <tr>
+    <td><table align="center" border="0" cellpadding="0" cellspacing="0" class="rwd" width="640">
+        <tr>
+          <td class="rwd-padding-all"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td class="rwd border-gray" width="295"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td height="35" class="rwd-header-4 bgcolor-blue-dark font-blue-light rwd-padding-sides" valign="bottom">Maecenas sempere</td>
+                    </tr>
+                    <tr>
+                      <td height="100" class="rwd-header-3 bgcolor-blue-dark font-white rwd-padding-sides" valign="top">Facete omnesque eum id, adhuc</td>
+                    </tr>
+                    <tr>
+                      <td height="150" class="rwd-col-2 font-gray rwd-padding-sides" valign="top">Lorem ipsum dolor sit amet, ad dicit fabellas recteque eum, mel et sumo dolorum, ei pri quidam corpora laboramus. Nam congue suavitate intellegebat ea, ei vis utinam maiorum.</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0 20px 20px 20px;"><hr style="border: 1px solid #EBEBEC">
+                        <a href="https://www.google.com/" name="Discover_How_btn_1" style="text-decoration:none; font-weight: bold; font-size: 11px; font-family: sans-serif; color: #00588a;">Discover How &raquo;</a></td>
+                    </tr>
+                  </table></td>
+                <td class="rwd" width="10">&nbsp;</td>
+                <td class="rwd border-gray" width="295"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td height="140" valign="top"><img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1149&q=80" alt="train" width="295" height="140" class="rwd-img"></td>
+                    </tr>
+                    <tr>
+                      <td height="30" class="rwd-header-4 font-gray rwd-padding-sides" valign="bottom">Maecenas sempere</td>
+                    </tr>
+                    <tr>
+                      <td height="30" class="rwd-header-3 font-gray rwd-padding-sides" valign="top">Facete omnesque eum id, adhuc</td>
+                    </tr>
+                    <tr>
+                      <td height="80" class="rwd-col-2 font-gray rwd-padding-sides" valign="top">Lorem ipsum dolor sit amet, ad dicit fabellas recteque eum, mel et sumo dolorum, ei pri quidam corpora laboramus.</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0 20px 20px 20px;"><hr style="border: 1px solid #EBEBEC">
+                        <a href="https://www.google.com/" name="Discover_How_btn_1" style="text-decoration:none; font-weight: bold; font-size: 11px; font-family: sans-serif; color: #00588a;">Discover How &raquo;</a></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  
+  <!-- IMAGE LEFT CONTENT RIGHT WITH CTA START -->
+  <tr>
+    <td valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" class="rwd-padding" width="640">
+        <tr>
+          <td class="rwd-padding-all"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td class="rwd" valign="top" width="220"><img alt="airplane" border="0" class="rwd-img" height="220" src="https://images.unsplash.com/photo-1495729332511-9aeef4f722a4?auto=format&fit=crop&w=800&q=80" width="220" /></td>
+                <td class="rwd" width="50">&nbsp;</td>
+                <td class="rwd" valign="top" width="310"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td class="rwd-header-2 font-gray" valign="top">Lorem ipsum dolor</td>
+                    </tr>
+                    <tr>
+                      <td class="rwd-col-2" valign="top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt, massa sit amet sodales dictum, felis sem vestibulum ex, eget ultrices ante diam sit amet elit.</td>
+                    </tr>
+                    <tr>
+                      <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td><a href="https://www.google.com/" name="explore_btn" class="btn btn-teal btn-lg">Explore</a></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  
+  <!-- DISCLOSURE -->
+  <tr>
+    <td><table align="center" border="0" cellpadding="0" cellspacing="0" width="640">
+        <tr>
+          <td class="rwd-padding-all"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td class="social-icons"><img src="img/twitter.png" alt="Twitter" /><img src="img/youtube.png" alt="YouTube" /><img src="img/instagram.png" alt="Instagram" /><img src="img/facebook.png" alt="Facebook" /><img src="img/linkedin.png" alt="LinkedIn" /></td>
+              </tr>
+              <tr>
+                <td valign="top" class="disclosure">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor est eget sem imperdiet elementum. Donec vulputate urna vel lacus placerat dapibus. Morbi et congue magna. Sed tristique euismod magna ut cursus. In a nibh enim. In rhoncus ipsum vitae massa fermentum, nec efficitur tortor condimentum. Praesent eu auctor lacus. Nullam placerat pulvinar nunc.
+                  <p>Maecenas feugiat nulla non velit iaculis, quis tincidunt dolor ultrices. Aenean dignissim diam non eros tincidunt lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum tempor sollicitudin turpis et cursus. Nunc pretium pharetra quam a vehicula. Nam sagittis eros eget ex tempus aliquam. Mauris vel lectus id erat scelerisque iaculis eget vel justo. Quisque non eleifend urna. Donec lobortis nunc eu turpis congue pharetra.</p>
+                  <p>Maecenas semper, leo sit amet aliquam commodo, nisl tortor tincidunt mi, quis tristique felis tortor non arcu. Morbi aliquam commodo pellentesque. Curabitur interdum, mauris in rhoncus sagittis, turpis leo tempor leo, nec tempus dolor dui at mauris. Donec maximus ipsum sed tempor sagittis. Vivamus eros felis, pharetra vitae sapien id, bibendum consequat magna. Vivamus a tellus nulla. Mauris a magna ipsum. In nec sapien eu arcu egestas congue sit amet sit amet urna. Curabitur vehicula arcu ut justo aliquam, sagittis ullamcorper velit eleifend. Praesent congue sollicitudin sapien, nec porta turpis semper at. Morbi eu risus commodo, vestibulum tellus ut, molestie nisi. Praesent sed luctus sem. In commodo dictum justo id iaculis.</p>
+                  <p>Curabitur pellentesque arcu libero, vitae consequat neque vehicula vel. Pellentesque gravida felis quam, sit amet mollis nulla finibus non. Nam venenatis risus neque, non dignissim quam ultricies id. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed a venenatis mi. Donec ultricies, est non scelerisque pulvinar, augue libero congue justo, a congue neque nisi vitae augue. Integer et porttitor nisl, non aliquet metus. Mauris egestas fringilla dui semper sollicitudin.</p>
+                  <p>Integer nulla arcu, iaculis ac ante vel, condimentum facilisis ligula. Fusce ut nunc mattis, pulvinar leo at, lobortis turpis. Nunc suscipit eros et metus porta, eu posuere sem tincidunt. Cras tincidunt sed justo vitae egestas. Nulla et dapibus lectus. Cras et facilisis tellus. Nam viverra ornare tellus accumsan lobortis. Donec tempus elementum diam, id auctor ante auctor quis. Ut vitae elit tempus, volutpat risus in, ultricies sapien. Integer semper, lectus et euismod hendrerit, ex mauris congue eros, a malesuada nulla mi sit amet mauris. Donec dolor massa, consequat ac vulputate et, pretium sed augue. Quisque suscipit tempus tellus.</p></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>
